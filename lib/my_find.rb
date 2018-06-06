@@ -6,7 +6,7 @@ def my_find(collection)
   while i < collection.length
     # 2: for each element in the collection, yield to the block
     # 3: use the return value of the yield block
-      return (collection[i] if yield(collection[i]) # use statement modifier to refactor everything in one line
+      return collection[i] if yield(collection[i] # use statement modifier to refactor everything in one line
     i += 1
   end
 end
